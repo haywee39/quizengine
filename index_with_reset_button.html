@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Knowledge Navigator - Quiz Machine</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* margin-top: 5rem; */
+        }
+        .quiz-container {
+            margin-top: 5rem;
+            background-color: #1e1e1e;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            width: 90%;
+            max-width: 1000px;
+            text-align: center;
+            border: 2px solid #4CAF50;
+        }
+        .header-area {
+            margin-bottom: 30px;
+            /* background-color: blue; */
+        }
+        .title-decoration {
+            color: #ff6b6b;
+        }
+        h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .tagline {
+            font-size: 24px;
+            font-style: italic;
+            color: #aaa;
+        }
+        .input-area {
+            margin: 30px 0;
+        }
+        label {
+            font-size: 24px;
+            display: block;
+            margin-bottom: 10px;
+        }
+        select, input {
+            font-size: 24px;
+            padding: 10px;
+            width: 100%;
+            max-width: 300px;
+            margin: 10px auto;
+            border-radius: 5px;
+            border: 2px solid #4CAF50;
+        }
+        .action-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 24px;
+            margin: 15px 5px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+        .action-button:hover {
+            background-color: #45a049;
+        }
+        #question-text {
+            font-size: 36px;
+            margin: 30px 0;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            min-height: 100px;
+        }
+        #question-text.show {
+            opacity: 1;
+        }
+        #spin-animation {
+            display: none;
+            margin: 30px auto;
+            width: 80px;
+            height: 80px;
+            border: 8px solid #333;
+            border-top: 8px solid #b6622e;
+            border-radius: 50%;
+            animation: spin 2s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .footer-message {
+            margin-top: 30px;
+            font-size: 18px;
+            color: #aaa;
+        }
+        #fullscreen-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            font-size: 18px;
+            padding: 10px 15px;
+        }
+    </style>
+</head>
+<body>
+    <button id="fullscreen-button" class="action-button">📺 Full Screen</button>
+    <div class="quiz-container">
+        <div class="header-area">
+            
+             <!-- <p class="tagline">Your quest for answers begins here!</p> -->             
+             <img src="./6.png" alt="" style="width: 70px; height: 70px;">
+             <h2>FGC Opeilu Sunday School</h2>
+             <h1><span class="title-decoration">✨</span> The Knowledge Navigator <span class="title-decoration">✨</span></h1>            
+             <p class="tagline">Your word is a lamp unto my feet... Psalms 119:105</p>
+        </div>
+
+        <div class="input-area">
+            <!-- <button id="reset-button" class="action-button">Reset</button> -->
+            <label for="category-select">Select a Category:</label>
+            <select id="category-select"></select>
+            <br>
+            <label for="question-number-input">Pick a number (1-10):</label>
+            <input type="number" id="question-number-input" min="1" max="10" placeholder="e.g., 3">
+            <button id="get-question-button" class="action-button">Uncover Question!</button>
+            <button id="reset-button" class="action-button">Reset</button>
+            <div id="spin-animation"></div>
+        </div>
+
+        <div class="question-display">
+            <p class="instruction-text" id="initial-instruction">Select a category and enter your choice above to reveal your challenge!</p>
+            <h2 id="question-text"></h2>
+        </div>
+
+        <div class="footer-message">
+            <p>Powered by TagsTechie Solutions</p>
+        </div>
+    </div>
+
+    <script>
+        // Full-screen button logic
+        document.getElementById('fullscreen-button').addEventListener('click', () => {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen().catch(err => {
+                    console.error(`Error attempting to enable full-screen mode: ${err.message}`);
+                });
+            }
+        });
+    </script>
+    <script src="app_manual_reset.js"></script>
+</body>
+</html>
