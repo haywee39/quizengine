@@ -74,7 +74,13 @@
             transition: background-color 0.3s;
         }
         .action-button:hover {
-            background-color: #45a049;
+            background-color: green;
+        }
+        #reset-button{
+            background-color: orange;
+        }
+        #reset-button:hover{
+            background-color: orangered;
         }
         #question-text {
             font-size: 36px;
@@ -92,7 +98,7 @@
             width: 80px;
             height: 80px;
             border: 8px solid #333;
-            border-top: 8px solid #b6622e;
+            border-top: 8px solid #b6a22e;
             border-radius: 50%;
             animation: spin 2s linear infinite;
         }
@@ -113,25 +119,25 @@
             padding: 10px 15px;
         }
 
-        @media (max-width: 600px) {
-    h1 {
-        font-size: 24px;
-    }
-    .tagline {
-        font-size: 16px;
-    }
-    label, select, input, .action-button {
-        font-size: 16px;
-        padding: 8px 12px;
-    }
-    #question-text {
-        font-size: 20px;
-    }
-    .quiz-container {
-        width: 95%;
-        padding: 15px;
-    }
-}
+            @media (max-width: 600px) {
+            h1 {
+                font-size: 24px;
+            }
+            .tagline {
+                font-size: 16px;
+            }
+            label, select, input, .action-button {
+                font-size: 16px;
+                padding: 8px 12px;
+            }
+            #question-text {
+                font-size: 20px;
+            }
+            .quiz-container {
+                width: 95%;
+                padding: 15px;
+            }
+        }
 
     </style>
 </head>
