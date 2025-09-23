@@ -15,7 +15,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            /* height: 100vh; */
+            height: auto;
             /* margin-top: 5rem; */
         }
         .quiz-container {
@@ -24,24 +25,30 @@
             border-radius: 15px;
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
             padding: 30px;
-            width: 90%;
-            max-width: 1000px;
+            width: 95%;
+            height: auto;
+            max-width: 1200px;
             text-align: center;
             border: 2px solid #4CAF50;
         }
         .header-area {
             margin-bottom: 30px;
+            /* width: 80%; */
             /* background-color: blue; */
         }
         .title-decoration {
-            color: #ff6b6b;
+            color: orangered;
         }
         h1 {
-            font-size: 48px;
+            font-size: 45px;
+            margin: 0;
+        }
+        h2{
+            font-size: 35px;
             margin: 0;
         }
         .tagline {
-            font-size: 24px;
+            font-size: 25px;
             font-style: italic;
             color: #aaa;
         }
@@ -49,12 +56,12 @@
             margin: 30px 0;
         }
         label {
-            font-size: 24px;
+            font-size: 25px;
             display: block;
             margin-bottom: 10px;
         }
         select, input {
-            font-size: 24px;
+            font-size: 25px;
             padding: 10px;
             width: 100%;
             max-width: 300px;
@@ -83,7 +90,7 @@
             background-color: orangered;
         }
         #question-text {
-            font-size: 36px;
+            font-size: 100px;
             margin: 30px 0;
             opacity: 0;
             transition: opacity 1s ease-in-out;
@@ -95,10 +102,10 @@
         #spin-animation {
             display: none;
             margin: 30px auto;
-            width: 80px;
-            height: 80px;
-            border: 8px solid #333;
-            border-top: 8px solid #b6a22e;
+            width: 120px;
+            height: 120px;
+            border: 10px solid white;
+            border-top: 10px solid orange;
             border-radius: 50%;
             animation: spin 2s linear infinite;
         }
@@ -108,13 +115,13 @@
         }
         .footer-message {
             margin-top: 30px;
-            font-size: 18px;
+            font-size: 20px;
             color: #aaa;
         }
         #fullscreen-button {
             position: fixed;
             top: 20px;
-            right: 20px;
+            right: 10px;
             font-size: 18px;
             padding: 10px 15px;
         }
@@ -154,7 +161,6 @@
         </div>
 
         <div class="input-area">
-            <!-- <button id="reset-button" class="action-button">Reset</button> -->
             <label for="category-select">Select a Category:</label>
             <select id="category-select"></select>
             <br>
