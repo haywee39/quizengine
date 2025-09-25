@@ -10,41 +10,41 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Define categories and questions
     const categories = {
-        "Category A": {
-            1: "Question 1 for Category A: What is the capital of France?",
-            2: "Question 2 for Category A: What planet is known as the Red Planet?",
-            3: "Question 3 for Category A: Who wrote the play 'Romeo and Juliet'?",
-            4: "Question 4 for Category A: What is the largest ocean on Earth?",
-            5: "Question 5 for Category A: What element does 'O' represent on the periodic table?",
-            6: "Question 6 for Category A: How many continents are there?",
-            7: "Question 7 for Category A: What is the longest river in the world?",
-            8: "Question 8 for Category A: In what country would you find the Great Pyramid of Giza?",
-            9: "Question 9 for Category A: What is the largest mammal?",
-            10: "Question 10 for Category A: Who painted the Mona Lisa?"
+        "ADULT ENGLISH": {
+            1: "Question 1 for ADULT ENGLISH: Quote lesson 29, topic and central truth",
+            2: "Question 2 for ADULT ENGLISH: Quote the memory verse for lesson 31, and the 3 lesson outline",
+            3: "Question 3 for ADULT ENGLISH: Quote lesson 32, topic and memory verse'?",
+            4: "Question 4 for ADULT ENGLISH: Question from lesson 33- Do you believe that the working of miracle like tongues and the working of miracles, have ceased with the Apostle-Age?. Yes or No",
+            5: "Question 5 for ADULT ENGLISH: Quote from lesson 34, Since we are saved by grace, does God really pay attention to our physical appearance? (b)Is there any moderation in love?",
+            6: "Question 6 for ADULT ENGLISH: Quote from lesson 35,What is the difference between being a member of local church and a member of the universal church of Christ?",
+            7: "Question 7 for ADULT ENGLISH: How can the church improve it's efficiency and impact in our world today?",
+            8: "Question 8 for ADULT ENGLISH: Quote topic for lesson 38, and it's central truth"
+            // 9: "Question 9 for ADULT ENGLISH: What is the largest mammal?",
+            // 10: "Question 10 for ADULT ENGLISH: Who painted the Mona Lisa?"
         },
-        "Category B": {
-            1: "Question 1 for Category B: What is the chemical symbol for gold?",
-            2: "Question 2 for Category B: Which planet is closest to the sun?",
-            3: "Question 3 for Category B: Who is the author of 'To Kill a Mockingbird'?",
-            4: "Question 4 for Category B: What is the tallest mountain in the world?",
-            5: "Question 5 for Category B: What is the largest country by area?",
-            6: "Question 6 for Category B: What is the capital of Japan?",
-            7: "Question 7 for Category B: Who discovered gravity?",
-            8: "Question 8 for Category B: What is the largest desert in the world?",
-            9: "Question 9 for Category B: What is the boiling point of water in Celsius?",
-            10: "Question 10 for Category B: Who was the first man on the moon?"
+        "MEMBERSHIP CLASS": {
+            1: "Question 1 for MEMBERSHIP CLASS: WHAT IS THE NAME OF FOURSQUARE FOUNDER?",
+            2: "Question 2 for MEMBERSHIP CLASS: WHAT IS THE TOPIC OF LESSON 14?",
+            3: "Question 3 for MEMBERSHIP CLASS: WHAT DOES THE DOVE SYMBOL MEANS?",
+            4: "Question 4 for MEMBERSHIP CLASS: ONE OF THE CRITERIA FOR ENTERING HEAVEN IS?",
+            5: "Question 5 for MEMBERSHIP CLASS: WHAT LESSON TREATED THE TOPIC 'HEAVEN'?"
+            // 6: "Question 6 for Memebership Class: What is the capital of Japan?",
+            // 7: "Question 7 for Memebership Class: Who discovered gravity?",
+            // 8: "Question 8 for Memebership Class: What is the largest desert in the world?",
+            // 9: "Question 9 for Memebership Class: What is the boiling point of water in Celsius?",
+            // 10: "Question 10 for Memebership Class: Who was the first man on the moon?"
         },
-        "Category C": {
-            1: "Question 1 for Category C: What is the currency of Germany?",
-            2: "Question 2 for Category C: What is the largest animal in the world?",
-            3: "Question 3 for Category C: Who painted 'The Starry Night'?",
-            4: "Question 4 for Category C: What is the capital of Australia?",
-            5: "Question 5 for Category C: What is the largest planet in our solar system?",
-            6: "Question 6 for Category C: What is the smallest country in the world?",
-            7: "Question 7 for Category C: Who wrote 'The Great Gatsby'?",
-            8: "Question 8 for Category C: What is the largest lake in the world?",
-            9: "Question 9 for Category C: What is the capital of Canada?",
-            10: "Question 10 for Category C: Who invented the telephone?"
+        "BAPTISMAL CLASS": {
+            1: "Question 1 for BAPTISMAL CLASS: According to the lesson 'The Plan of Salvation'_________ is the only way to heaven (a)Water Baptism (b)Holy Communion (c)Salvation (d)Speaking in Tongues",
+            2: "Question 2 for BAPTISMAL CLASS: What is Salvation?",
+            3: "Question 3 for BAPTISMAL CLASS: What is the memory verse of the lesson 'Assurance of Salvation'",
+            4: "Question 4 for BAPTISMAL CLASS: What does Salvation do to us? Mention any two",
+            5: "Question 5 for BAPTISMAL CLASS: Water Baptism is not necessarily by immersion. True or False?",
+            6: "Question 6 for BAPTISMAL CLASS: Who planned Salvation",
+            7: "Question 7 for BAPTISMAL CLASS: What is the memory verse for the lesson- Water Baptism?",
+            8: "Question 8 for BAPTISMAL CLASS: Quote and recite the memory verse for the lesson: The Plan of Salvation",
+            9: "Question 9 for BAPTISMAL CLASS: Acts 1:8 is the memory verse for which lesson? Give the topic.",
+            10: "Question 10 for BAPTISMAL CLASS: Water Baptism is an ordinance. True or False?"
         },
         "Category D": {
             1: "Question 1 for Category D: What is the capital of Brazil?",
