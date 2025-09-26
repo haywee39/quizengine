@@ -39,36 +39,36 @@ document.addEventListener('DOMContentLoaded', () => {
             2: "Question 2 for BAPTISMAL CLASS: What is Salvation?",
             3: "Question 3 for BAPTISMAL CLASS: What is the memory verse of the lesson 'Assurance of Salvation'",
             4: "Question 4 for BAPTISMAL CLASS: What does Salvation do to us? Mention any two",
-            5: "Question 5 for BAPTISMAL CLASS: Water Baptism is not necessarily by immersion. True or False?",
+            5: "Question 5 for BAPTISMAL CLASS: Why do we not baptise babies in Foursquare?",
             6: "Question 6 for BAPTISMAL CLASS: Who planned Salvation",
-            7: "Question 7 for BAPTISMAL CLASS: What is the memory verse for the lesson- Water Baptism?",
-            8: "Question 8 for BAPTISMAL CLASS: Quote and recite the memory verse for the lesson: The Plan of Salvation",
-            9: "Question 9 for BAPTISMAL CLASS: Acts 1:8 is the memory verse for which lesson? Give the topic.",
-            10: "Question 10 for BAPTISMAL CLASS: Water Baptism is an ordinance. True or False?"
+            7: "Question 7 for BAPTISMAL CLASS: State 3 importance of Water Baptism",
+            8: "Question 8 for BAPTISMAL CLASS: Recite the memory verse of lesson two",
+            9: "Question 9 for BAPTISMAL CLASS:  What are the two ordinances Jesus gave his disciples?",
+            10: "Question 10 for BAPTISMAL CLASS: What is the meaning of  baptism"
         },
-        "Category D": {
-            1: "Question 1 for Category D: What is the capital of Brazil?",
-            2: "Question 2 for Category D: What is the largest bird in the world?",
-            3: "Question 3 for Category D: Who wrote 'Pride and Prejudice'?",
-            4: "Question 4 for Category D: What is the capital of South Africa?",
-            5: "Question 5 for Category D: What is the largest island in the world?",
-            6: "Question 6 for Category D: What is the capital of China?",
-            7: "Question 7 for Category D: Who painted 'The Scream'?",
-            8: "Question 8 for Category D: What is the largest waterfall in the world?",
-            9: "Question 9 for Category D: What is the capital of Italy?",
-            10: "Question 10 for Category D: Who discovered penicillin?"
+        "TEENS MEMEBERSHIP": {
+            1: "Question 1 for TEENS MEMEBERSHIP:	_______________ and ____________ are the two ordinances that the Foursquare Gospel Church believe in.  A. Baptism & Reincarnation B. The Lord’s Supper & Water Baptism C. Holy Baptism & The Lord’s Supper",
+            2: "Question 2 for TEENS MEMEBERSHIP:	The two types of church are? A. Visible and Invisible church B. Heavenly and Earthly Church C. Foursquare Gospel Church and Others ",
+            3: "Question 3 for TEENS MEMEBERSHIP:	The key to daily walking worthy of the Lord unto all pleasing is A. Fasting & Prayer B. The Secret Place C. Meditation",
+            4: "Question 4 for TEENS MEMEBERSHIP:	Vocal Gifts, Fire Gifts and Revelation Gifts are categories of the gifts of the Holy Spirit according to 1 Cor. 12:1-11. True/False",
+            5: "Question 5 for TEENS MEMEBERSHIP:	The nine gifts of the Holy Spirit mentioned in 1 Cor. 12:1-11 are the only gifts available to the Church. True/False",
+            6: "Question 6 for TEENS MEMEBERSHIP:	Righteousness and holiness are the same. True/false",
+            7: "Question 7 for TEENS MEMEBERSHIP:	State lesson 14 and recite the memory verse for the lesson",
+            8: "Question 8 for TEENS MEMEBERSHIP:	State lesson five and recite the memory verse of the lesson.",
+            9: "Question 9 for TEENS MEMEBERSHIP:	Mention the nine (9) fruit of the Spirit according to Gal. 5:22-23",
+            10: "Question 10 for TEENS MEMEBERSHIP:	State lesson one and quote the memory verse for the lesson."
         },
-        "Category E": {
-            1: "Question 1 for Category E: What is the capital of Spain?",
-            2: "Question 2 for Category E: What is the largest reptile in the world?",
-            3: "Question 3 for Category E: Who wrote '1984'?",
-            4: "Question 4 for Category E: What is the capital of India?",
-            5: "Question 5 for Category E: What is the largest continent in the world?",
-            6: "Question 6 for Category E: What is the capital of Russia?",
-            7: "Question 7 for Category E: Who painted 'The Last Supper'?",
-            8: "Question 8 for Category E: What is the largest volcano in the world?",
-            9: "Question 9 for Category E: What is the capital of Egypt?",
-            10: "Question 10 for Category E: Who invented the light bulb?"
+        "ADULT YORUBA": {
+            1: "Question 1 for ADULT YORUBA: ",
+            2: "Question 2 for ADULT YORUBA: ",
+            3: "Question 3 for ADULT YORUBA: ",
+            4: "Question 4 for ADULT YORUBA: ",
+            5: "Question 5 for ADULT YORUBA: "
+            // 6: "Question 6 for Category E: What is the capital of Russia?",
+            // 7: "Question 7 for Category E: Who painted 'The Last Supper'?",
+            // 8: "Question 8 for Category E: What is the largest volcano in the world?",
+            // 9: "Question 9 for Category E: What is the capital of Egypt?",
+            // 10: "Question 10 for Category E: Who invented the light bulb?"
         }
     };
 
@@ -130,4 +130,37 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }, 2000); // 2 seconds delay for spin animation
     });
+
+                    // Add this inside the DOMContentLoaded event listener
+                const fullscreenQuestionButton = document.getElementById('fullscreen-question-button');
+                const questionFullscreen = document.createElement('div');
+                questionFullscreen.id = 'question-fullscreen';
+                document.body.appendChild(questionFullscreen);
+
+                // Show the fullscreen question button after a question is displayed
+                const showFullscreenButton = () => {
+                    fullscreenQuestionButton.style.display = 'block';
+                };
+
+                // Hide the fullscreen question button initially
+                fullscreenQuestionButton.style.display = 'none';
+
+                // Fullscreen question button event listener
+                fullscreenQuestionButton.addEventListener('click', () => {
+                    questionFullscreen.textContent = questionText.textContent;
+                    questionFullscreen.style.display = 'flex';
+                });
+
+                // Exit fullscreen when clicking on the fullscreen question
+                questionFullscreen.addEventListener('click', () => {
+                    questionFullscreen.style.display = 'none';
+                });
+
+                // Modify the existing question display logic to show the fullscreen button
+                // Inside the setTimeout where the question is displayed, add:
+                showFullscreenButton();
+
 });
+
+
+
