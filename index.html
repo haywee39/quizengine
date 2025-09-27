@@ -33,8 +33,6 @@
         }
         .header-area {
             margin-bottom: 30px;
-            /* width: 80%; */
-            /* background-color: blue; */
         }
         .title-decoration {
             color: orangered;
@@ -99,6 +97,10 @@
         #question-text.show {
             opacity: 1;
         }
+        #question-text, #question-fullscreen {
+            text-align: left;
+        }
+
         #spin-animation {
             display: none;
             margin: 30px auto;
@@ -125,11 +127,12 @@
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
-                font-size: 4rem;
+                font-size: 4.2rem;
+                font-weight: bold;
                 z-index: 1000;
                 padding: 20px;
                 box-sizing: border-box;
-                text-align: center;
+                text-align: left;
             }
 
         .footer-message {
@@ -170,9 +173,7 @@
 <body>
     <button id="fullscreen-button" class="action-button">📺 Full Screen</button>
     <div class="quiz-container">
-        <div class="header-area">
-            
-             <!-- <p class="tagline">Your quest for answers begins here!</p> -->             
+        <div class="header-area">         
              <img src="./6.png" alt="" style="width: 70px; height: 70px;">
              <h2>FGC Opeilu Sunday School</h2>
              <h1><span class="title-decoration">✨</span> The Knowledge Navigator <span class="title-decoration">✨</span></h1>            
