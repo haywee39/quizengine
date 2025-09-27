@@ -60,6 +60,18 @@ document.addEventListener('DOMContentLoaded', () => {
             3: "Question 3 for ADULT YORUBA: \nKini akosori ti owa ni Eko 4?",
             4: "Question 4 for ADULT YORUBA: \nOlorun Metalokan Ayeraye, ni'bo  ni ari ayoka re wa?",
             5: "Question 5 for ADULT YORUBA: \nKiki Oba Kaabo, kini ese lati ranti? \nEko wo lowa?"
+        },
+
+        "TEENS CLASS": {
+            1: "Question 1 for TEENS CLASS: \nLesson : God's Nation Delivered through Moses \nList the lesson outline",
+            2: "Question 2 for TEENS CLASS: \nThe children of Israel dwelt in Egypt for how many years? ",
+            3: "Question 3 for TEENS CLASS: \nLesson : The Ten Commandments. \nRecite the memory verse",
+            4: "Question 4 for TEENS CLASS: \nList the ten commandments.",
+            5: "Question 5 for TEENS CLASS: \nWhat is the essence of the commandments?",
+            6: "Question 6 for TEENS CLASS: \nWhat are the  consequences of sin?",
+            7: "Question 7 for TEENS CLASS: \nLesson: Creating a New People (from the wilderness) \nList the lesson outline. \nExplain the first two outline. \nMention the name of people that came with positive feedback ",
+            8: "Question 8 for TEENS CLASS: \nLesson: Concept of Sin and Righteousness. \nMention the lesson outline",
+            9: "Question 9 for TEENS CLASS: \nThe acronym of SIN is what? \nRecite Romans 6: 23 ?"
         }
     };
 
