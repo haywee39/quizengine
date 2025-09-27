@@ -63,15 +63,16 @@ document.addEventListener('DOMContentLoaded', () => {
         },
 
         "TEENS CLASS": {
-            1: "Question 1 for TEENS CLASS: \nLesson : God's Nation Delivered through Moses \nList the lesson outline",
+            1: "Question 1 for TEENS CLASS: \nLesson 34: God's Nation Delivered through Moses \nList the lesson outline under this lesson",
             2: "Question 2 for TEENS CLASS: \nThe children of Israel dwelt in Egypt for how many years? ",
-            3: "Question 3 for TEENS CLASS: \nLesson : The Ten Commandments. \nRecite the memory verse",
-            4: "Question 4 for TEENS CLASS: \nList the ten commandments.",
+            3: "Question 3 for TEENS CLASS: \nLesson 35: The Ten Commandments. \nRecite the memory verse of this lesson",
+            4: "Question 4 for TEENS CLASS: \nList the ten commandments God gave to the children of Israel.",
             5: "Question 5 for TEENS CLASS: \nWhat is the essence of the commandments?",
             6: "Question 6 for TEENS CLASS: \nWhat are the  consequences of sin?",
-            7: "Question 7 for TEENS CLASS: \nLesson: Creating a New People (from the wilderness) \nList the lesson outline. \nExplain the first two outline. \nMention the name of people that came with positive feedback ",
-            8: "Question 8 for TEENS CLASS: \nLesson: Concept of Sin and Righteousness. \nMention the lesson outline",
-            9: "Question 9 for TEENS CLASS: \nThe acronym of SIN is what? \nRecite Romans 6: 23 ?"
+            7: "Question 7 for TEENS CLASS: \nLesson 36: Creating a New People (from the wilderness) \nList the lesson outline. \nExplain the first two outline. \nMention the name of people that came with positive feedback ",
+            8: "Question 8 for TEENS CLASS: \nLesson 32: Concept of Sin and Righteousness. \nMention the lesson outline under this lesson",
+            9: "Question 9 for TEENS CLASS: \nThe acronym of SIN is what? \nRecite Romans 6:23 ?",
+            10: "Question 10 for TEENS CLASS: \nList the 10 plagues that God caused upon the children of Egypt in order to deliver them from Pharaoh"
         }
     };
 
