@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
             6: "Question 6 for TEENS MEMEBERSHIP:	\nRighteousness and holiness are the same. True \nfalse",
             7: "Question 7 for TEENS MEMEBERSHIP:	\nState lesson 14 and recite the memory verse for the lesson",
             8: "Question 8 for TEENS MEMEBERSHIP:	\nState lesson 5 and recite the memory verse of the lesson.",
-            9: "Question 9 for TEENS MEMEBERSHIP:	\nMention the nine (9) fruit of the Spirit according to Gal. 5:22-23",
+            9: "Question 9 for TEENS MEMBERSHIP:	\nMention the nine (9) fruit of the Spirit according to Gal. 5:22-23",
             10: "Question 10 for TEENS MEMEBERSHIP:	\nState lesson one and quote the memory verse for the lesson."
         },
         
